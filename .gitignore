@@ -1,0 +1,58 @@
+# ==========================================
+# Root .gitignore - Smart Energy Intelligence
+# ==========================================
+
+# Environment variables & local secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python Bytecode, Virtual Environments & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Node & Frontend dependencies & bundles
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Databases & Runtime State (Keep schema / seed scripts, ignore private stores)
+*.db
+*.sqlite
+*.sqlite3
+backend/smart_energy.db
+data/*.db
+data/*.sqlite
+
+# Logs & Temporary files
+logs/
+*.log
+npm-debug.log*
+
+# IDE & OS Artifacts
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
